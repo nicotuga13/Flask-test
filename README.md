@@ -1,6 +1,10 @@
 # flask-final
 
+DEV
 
+
+PROD
+[![Production Workflow 1](https://github.com/nicktuga13/flask-final/actions/workflows/prod.yml/badge.svg)](https://github.com/nicktuga13/flask-final/actions/workflows/prod.yml)
 
 4th and Final project for IS218 at NJIT.
 
