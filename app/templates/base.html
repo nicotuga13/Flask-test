@@ -34,16 +34,18 @@
                     <div class="navbar-nav mr-auto">
                         {% if current_user.is_authenticated %}
                             {{ render_nav_item('auth.dashboard','Dashboard' ) }}
+                            {{ render_nav_item('transactions.transactions_browse','My Transactions') }}
+                            {{ render_nav_item('transactions.transaction_upload','Upload Transactions') }}
                             {% if current_user.is_admin %}
                                 {{ render_nav_item('auth.browse_users','User Management' ) }}
                             {% endif %}
 
                         {% else %}
-                            {{ render_nav_item('simple_pages.index', 'Home') }}
+                            {{ render_nav_item('simple_pages.show', 'index') }}
                         {% endif %}
 
-                        {{ render_nav_item('simple_pages.about','About') }}
-                        {{ render_nav_item('simple_pages.welcome','Welcome') }}
+                        {{ render_nav_item('simple_pages.show','About') }}
+                        {{ render_nav_item('simple_pages.show','Welcome') }}
                     </div>
                 </div>
                 <div class="navbar-nav d-flex">
@@ -54,10 +56,11 @@
                                 My Account
                             </a>
                             <ul class="dropdown-menu " aria-labelledby="navbarDarkDropdownMenuLink">
-                                <li><a class="dropdown-item" href="{{ url_for("auth.profile_edit") }}">Manage Profile</a></li>
-                                <li><a class="dropdown-item" href="{{ url_for("auth.manage_account") }}">Manage Account</a></li>
+                                <li><a class="dropdown-item" href="{{ url_for("auth.edit_profile") }}">Manage Profile</a></li>
+                                <li><a class="dropdown-item" href="{{ url_for("auth.edit_account") }}">Manage Account</a></li>
                                 <li><a class="dropdown-item" href="{{ url_for("auth.logout") }}">Logout</a></li>
                             </ul>
+
                         </li>
                     {% else %}
                         {{ render_nav_item('auth.register','Register' ) }}

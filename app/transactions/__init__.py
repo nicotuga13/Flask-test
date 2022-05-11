@@ -23,14 +23,14 @@ def transactions_browse(page):
     pagination = Transaction.query.paginate(page, per_page, error_out=False)
     data = pagination.items
     try:
-        return render_template('browse_transactions.html',data=data,pagination=pagination)
+        return render_template('browse_transactions.html', data=data, pagination=pagination)
     except TemplateNotFound:
         abort(404)
 
 
 @transactions.route('/transactions/upload', methods=['POST', 'GET'])
 @login_required
-def songs_upload():
+def transaction_upload():
     form = csv_upload()
     if form.validate_on_submit():
         log = logging.getLogger("myApp")
@@ -43,12 +43,12 @@ def songs_upload():
         with open(filepath) as file:
             csv_file = csv.DictReader(file)
             for row in csv_file:
-                list_of_transactions.append(Transaction(row['Amount'], row['Type']))
+                list_of_transactions.append(Transaction(row['\ufeffAMOUNT'], row['TYPE']))
 
         current_user.transactions = list_of_transactions
         db.session.commit()
 
-        return redirect(url_for('songs.songs_browse'))
+        return redirect(url_for('transactions.transactions_browse'))
 
     try:
         return render_template('upload.html', form=form)
