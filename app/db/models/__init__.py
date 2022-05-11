@@ -14,7 +14,7 @@ class Transaction(db.Model):
     user_id = db.Column(db.Integer, db.ForeignKey('users.id'))
     user = relationship("User", back_populates="transactions")
 
-    def init(self, amount, transaction_type):
+    def __init__(self, amount, transaction_type):
         self.amount = amount
         self.transaction_type = transaction_type
 
@@ -29,6 +29,7 @@ class User(UserMixin, db.Model):
     registered_on = db.Column('registered_on', db.DateTime)
     active = db.Column('is_active', db.Boolean(), nullable=False, server_default='1')
     is_admin = db.Column('is_admin', db.Boolean(), nullable=False, server_default='0')
+    balance = db.Column(db.Float, nullable=True, unique=False, default="0.00")
     transactions = db.relationship("Transaction", back_populates="user", cascade="all, delete")
 
     # `roles` and `groups` are reserved words that *must* be defined
