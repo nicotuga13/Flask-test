@@ -1,0 +1,943 @@
+2022-05-11 19:27:33,976 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:27:33,978 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.email = ?
+ LIMIT ? OFFSET ?
+2022-05-11 19:27:33,979 [INFO] sqlalchemy.engine.Engine: [generated in 0.00047s] ('nc363@njit.edu', 1, 0)
+2022-05-11 19:27:34,112 [INFO] sqlalchemy.engine.Engine: INSERT INTO users (email, password, about, authenticated, registered_on) VALUES (?, ?, ?, ?, ?)
+2022-05-11 19:27:34,113 [INFO] sqlalchemy.engine.Engine: [generated in 0.00069s] ('nc363@njit.edu', 'pbkdf2:sha256:260000$hS5rAp9uG9gtzJNf$9ea328d4438ebdc3015e8d64737e7da40e03450871d18da344b1ce8263e3b633', None, 0, '2022-05-11 19:27:34.111618')
+2022-05-11 19:27:34,122 [INFO] sqlalchemy.engine.Engine: COMMIT
+2022-05-11 19:27:34,241 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:27:34,243 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:27:34,243 [INFO] sqlalchemy.engine.Engine: [generated in 0.00040s] (1,)
+2022-05-11 19:27:34,248 [INFO] sqlalchemy.engine.Engine: UPDATE users SET is_admin=? WHERE users.id = ?
+2022-05-11 19:27:34,248 [INFO] sqlalchemy.engine.Engine: [generated in 0.00035s] (1, 1)
+2022-05-11 19:27:34,253 [INFO] sqlalchemy.engine.Engine: COMMIT
+2022-05-11 19:27:38,398 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:27:38,398 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.email = ?
+ LIMIT ? OFFSET ?
+2022-05-11 19:27:38,398 [INFO] sqlalchemy.engine.Engine: [cached since 4.42s ago] ('nc363@njit.edu', 1, 0)
+2022-05-11 19:27:38,534 [INFO] sqlalchemy.engine.Engine: UPDATE users SET authenticated=? WHERE users.id = ?
+2022-05-11 19:27:38,535 [INFO] sqlalchemy.engine.Engine: [generated in 0.00066s] (1, 1)
+2022-05-11 19:27:38,543 [INFO] sqlalchemy.engine.Engine: COMMIT
+2022-05-11 19:27:39,491 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:27:39,492 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:27:39,492 [INFO] sqlalchemy.engine.Engine: [cached since 5.249s ago] (1,)
+2022-05-11 19:27:39,496 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:27:39,505 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:27:39,506 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:27:39,507 [INFO] sqlalchemy.engine.Engine: [generated in 0.00041s] (1,)
+2022-05-11 19:28:02,512 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:28:02,512 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:28:02,513 [INFO] sqlalchemy.engine.Engine: [cached since 23.01s ago] (1,)
+2022-05-11 19:28:12,862 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:28:12,862 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:28:12,863 [INFO] sqlalchemy.engine.Engine: [cached since 33.36s ago] (1,)
+2022-05-11 19:28:12,887 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:28:12,992 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:28:12,993 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:28:12,993 [INFO] sqlalchemy.engine.Engine: [cached since 33.49s ago] (1,)
+2022-05-11 19:28:20,801 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:28:20,805 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:28:20,806 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:28:20,806 [INFO] sqlalchemy.engine.Engine: [cached since 41.3s ago] (1,)
+2022-05-11 19:28:20,835 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:28:20,957 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:28:20,958 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:28:20,958 [INFO] sqlalchemy.engine.Engine: [cached since 41.45s ago] (1,)
+2022-05-11 19:28:21,598 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:28:21,604 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:28:21,604 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:28:21,604 [INFO] sqlalchemy.engine.Engine: [cached since 42.1s ago] (1,)
+2022-05-11 19:28:21,614 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:28:21,705 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:28:21,706 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:28:21,707 [INFO] sqlalchemy.engine.Engine: [cached since 42.2s ago] (1,)
+2022-05-11 19:28:23,251 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:28:23,258 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:28:23,258 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:28:23,259 [INFO] sqlalchemy.engine.Engine: [cached since 43.75s ago] (1,)
+2022-05-11 19:28:23,269 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:28:24,281 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:28:24,281 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:28:24,282 [INFO] sqlalchemy.engine.Engine: [cached since 44.78s ago] (1,)
+2022-05-11 19:28:25,621 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:28:25,627 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:28:25,628 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:28:25,628 [INFO] sqlalchemy.engine.Engine: [cached since 46.12s ago] (1,)
+2022-05-11 19:28:25,635 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:28:25,729 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:28:25,730 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:28:25,730 [INFO] sqlalchemy.engine.Engine: [cached since 46.22s ago] (1,)
+2022-05-11 19:28:34,019 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:28:34,023 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:28:34,024 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:28:34,024 [INFO] sqlalchemy.engine.Engine: [cached since 54.52s ago] (1,)
+2022-05-11 19:28:34,029 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users
+2022-05-11 19:28:34,029 [INFO] sqlalchemy.engine.Engine: [generated in 0.00061s] ()
+2022-05-11 19:28:34,251 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:28:34,360 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:28:34,360 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:28:34,361 [INFO] sqlalchemy.engine.Engine: [cached since 54.85s ago] (1,)
+2022-05-11 19:28:38,674 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:28:38,678 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:28:38,679 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:28:38,679 [INFO] sqlalchemy.engine.Engine: [cached since 59.17s ago] (1,)
+2022-05-11 19:28:38,687 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:28:38,764 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:28:38,765 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:28:38,765 [INFO] sqlalchemy.engine.Engine: [cached since 59.26s ago] (1,)
+2022-05-11 19:28:41,985 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:28:41,990 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:28:41,991 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:28:41,991 [INFO] sqlalchemy.engine.Engine: [cached since 62.48s ago] (1,)
+2022-05-11 19:28:42,008 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:28:42,093 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:28:42,093 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:28:42,094 [INFO] sqlalchemy.engine.Engine: [cached since 62.59s ago] (1,)
+2022-05-11 19:28:45,935 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:28:45,941 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:28:45,941 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:28:45,941 [INFO] sqlalchemy.engine.Engine: [cached since 66.44s ago] (1,)
+2022-05-11 19:28:45,946 [INFO] sqlalchemy.engine.Engine: UPDATE users SET about=? WHERE users.id = ?
+2022-05-11 19:28:45,946 [INFO] sqlalchemy.engine.Engine: [generated in 0.00037s] ('admin1', 1)
+2022-05-11 19:28:45,954 [INFO] sqlalchemy.engine.Engine: COMMIT
+2022-05-11 19:28:46,823 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:28:46,824 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:28:46,824 [INFO] sqlalchemy.engine.Engine: [cached since 67.32s ago] (1,)
+2022-05-11 19:28:46,832 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:28:46,915 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:28:46,915 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:28:46,916 [INFO] sqlalchemy.engine.Engine: [cached since 67.41s ago] (1,)
+2022-05-11 19:28:47,957 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:28:47,962 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:28:47,962 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:28:47,963 [INFO] sqlalchemy.engine.Engine: [cached since 68.46s ago] (1,)
+2022-05-11 19:28:47,971 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:28:48,041 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:28:48,041 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:28:48,042 [INFO] sqlalchemy.engine.Engine: [cached since 68.54s ago] (1,)
+2022-05-11 19:28:49,407 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:28:49,412 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:28:49,413 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:28:49,413 [INFO] sqlalchemy.engine.Engine: [cached since 69.91s ago] (1,)
+2022-05-11 19:28:49,418 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users
+2022-05-11 19:28:49,418 [INFO] sqlalchemy.engine.Engine: [cached since 15.39s ago] ()
+2022-05-11 19:28:49,425 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:28:49,519 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:28:49,519 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:28:49,520 [INFO] sqlalchemy.engine.Engine: [cached since 70.01s ago] (1,)
+2022-05-11 19:28:52,672 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:28:52,676 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:28:52,677 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:28:52,677 [INFO] sqlalchemy.engine.Engine: [cached since 73.17s ago] (1,)
+2022-05-11 19:28:52,691 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:28:52,767 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:28:52,767 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:28:52,768 [INFO] sqlalchemy.engine.Engine: [cached since 73.26s ago] (1,)
+2022-05-11 19:28:54,938 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:28:54,942 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:28:54,943 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:28:54,943 [INFO] sqlalchemy.engine.Engine: [cached since 75.44s ago] (1,)
+2022-05-11 19:28:54,947 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users
+2022-05-11 19:28:54,947 [INFO] sqlalchemy.engine.Engine: [cached since 20.92s ago] ()
+2022-05-11 19:28:54,954 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:28:55,047 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:28:55,047 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:28:55,048 [INFO] sqlalchemy.engine.Engine: [cached since 75.54s ago] (1,)
+2022-05-11 19:28:56,015 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:28:56,021 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:28:56,022 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:28:56,022 [INFO] sqlalchemy.engine.Engine: [cached since 76.52s ago] (1,)
+2022-05-11 19:28:56,033 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:28:56,139 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:28:56,139 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:28:56,140 [INFO] sqlalchemy.engine.Engine: [cached since 76.63s ago] (1,)
+2022-05-11 19:28:57,907 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:28:57,912 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:28:57,913 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:28:57,913 [INFO] sqlalchemy.engine.Engine: [cached since 78.41s ago] (1,)
+2022-05-11 19:28:57,920 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:28:58,007 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:28:58,007 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:28:58,008 [INFO] sqlalchemy.engine.Engine: [cached since 78.5s ago] (1,)
+2022-05-11 19:28:59,752 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:28:59,757 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:28:59,757 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:28:59,758 [INFO] sqlalchemy.engine.Engine: [cached since 80.25s ago] (1,)
+2022-05-11 19:28:59,765 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:28:59,855 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:28:59,856 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:28:59,857 [INFO] sqlalchemy.engine.Engine: [cached since 80.35s ago] (1,)
+2022-05-11 19:29:28,253 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:29:28,259 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:29:28,259 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:29:28,260 [INFO] sqlalchemy.engine.Engine: [cached since 108.8s ago] (1,)
+2022-05-11 19:29:28,269 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:29:28,383 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:29:28,384 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:29:28,384 [INFO] sqlalchemy.engine.Engine: [cached since 108.9s ago] (1,)
+2022-05-11 19:29:29,004 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:29:29,009 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:29:29,010 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:29:29,010 [INFO] sqlalchemy.engine.Engine: [cached since 109.5s ago] (1,)
+2022-05-11 19:29:29,020 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:29:29,109 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:29:29,110 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:29:29,110 [INFO] sqlalchemy.engine.Engine: [cached since 109.6s ago] (1,)
+2022-05-11 19:29:33,553 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:29:33,559 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:29:33,560 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:29:33,560 [INFO] sqlalchemy.engine.Engine: [cached since 114.1s ago] (1,)
+2022-05-11 19:29:33,577 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:29:33,664 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:29:33,665 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:29:33,665 [INFO] sqlalchemy.engine.Engine: [cached since 114.2s ago] (1,)
+2022-05-11 19:29:37,087 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:29:37,093 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:29:37,094 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:29:37,094 [INFO] sqlalchemy.engine.Engine: [cached since 117.6s ago] (1,)
+2022-05-11 19:29:37,102 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:29:37,196 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:29:37,196 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:29:37,197 [INFO] sqlalchemy.engine.Engine: [cached since 117.7s ago] (1,)
+2022-05-11 19:29:38,033 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:29:38,037 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:29:38,038 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:29:38,038 [INFO] sqlalchemy.engine.Engine: [cached since 118.5s ago] (1,)
+2022-05-11 19:29:38,046 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:29:38,133 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:29:38,134 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:29:38,134 [INFO] sqlalchemy.engine.Engine: [cached since 118.6s ago] (1,)
+2022-05-11 19:29:39,248 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:29:39,253 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:29:39,253 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:29:39,254 [INFO] sqlalchemy.engine.Engine: [cached since 119.7s ago] (1,)
+2022-05-11 19:29:39,259 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users
+2022-05-11 19:29:39,259 [INFO] sqlalchemy.engine.Engine: [cached since 65.23s ago] ()
+2022-05-11 19:29:39,265 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:29:39,363 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:29:39,364 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:29:39,364 [INFO] sqlalchemy.engine.Engine: [cached since 119.9s ago] (1,)
+2022-05-11 19:29:40,628 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:29:40,633 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:29:40,633 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:29:40,634 [INFO] sqlalchemy.engine.Engine: [cached since 121.1s ago] (1,)
+2022-05-11 19:29:40,643 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:29:40,739 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:29:40,740 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:29:40,741 [INFO] sqlalchemy.engine.Engine: [cached since 121.2s ago] (1,)
+2022-05-11 19:29:41,717 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:29:41,723 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:29:41,724 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:29:41,724 [INFO] sqlalchemy.engine.Engine: [cached since 122.2s ago] (1,)
+2022-05-11 19:29:41,730 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users
+2022-05-11 19:29:41,730 [INFO] sqlalchemy.engine.Engine: [cached since 67.7s ago] ()
+2022-05-11 19:29:41,737 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:29:41,829 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:29:41,830 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:29:41,830 [INFO] sqlalchemy.engine.Engine: [cached since 122.3s ago] (1,)
+2022-05-11 19:30:53,954 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:30:53,958 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:30:53,959 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:30:53,959 [INFO] sqlalchemy.engine.Engine: [cached since 194.5s ago] (1,)
+2022-05-11 19:30:53,964 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users
+2022-05-11 19:30:53,964 [INFO] sqlalchemy.engine.Engine: [cached since 139.9s ago] ()
+2022-05-11 19:31:27,304 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:31:27,305 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:31:27,305 [INFO] sqlalchemy.engine.Engine: [cached since 227.8s ago] (1,)
+2022-05-11 19:31:27,310 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users
+2022-05-11 19:31:27,310 [INFO] sqlalchemy.engine.Engine: [cached since 173.3s ago] ()
+2022-05-11 19:33:12,295 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:33:12,296 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:33:12,296 [INFO] sqlalchemy.engine.Engine: [cached since 332.8s ago] (1,)
+2022-05-11 19:33:12,302 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users
+2022-05-11 19:33:12,302 [INFO] sqlalchemy.engine.Engine: [cached since 278.3s ago] ()
+2022-05-11 19:33:12,326 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:33:12,458 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:33:12,459 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:33:12,459 [INFO] sqlalchemy.engine.Engine: [cached since 333s ago] (1,)
+2022-05-11 19:33:13,952 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:33:13,957 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:33:13,958 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:33:13,958 [INFO] sqlalchemy.engine.Engine: [cached since 334.5s ago] (1,)
+2022-05-11 19:33:13,967 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:33:14,060 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:33:14,061 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:33:14,061 [INFO] sqlalchemy.engine.Engine: [cached since 334.6s ago] (1,)
+2022-05-11 19:33:16,635 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:33:16,640 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:33:16,640 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:33:16,640 [INFO] sqlalchemy.engine.Engine: [cached since 337.1s ago] (1,)
+2022-05-11 19:33:16,647 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:33:16,744 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:33:16,744 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:33:16,745 [INFO] sqlalchemy.engine.Engine: [cached since 337.2s ago] (1,)
+2022-05-11 19:33:17,688 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:33:17,693 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:33:17,694 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:33:17,694 [INFO] sqlalchemy.engine.Engine: [cached since 338.2s ago] (1,)
+2022-05-11 19:33:17,698 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users
+2022-05-11 19:33:17,698 [INFO] sqlalchemy.engine.Engine: [cached since 283.7s ago] ()
+2022-05-11 19:33:17,706 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:33:17,799 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:33:17,800 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:33:17,800 [INFO] sqlalchemy.engine.Engine: [cached since 338.3s ago] (1,)
+2022-05-11 19:33:19,218 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:33:19,224 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:33:19,225 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:33:19,225 [INFO] sqlalchemy.engine.Engine: [cached since 339.7s ago] (1,)
+2022-05-11 19:33:22,469 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:33:22,477 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:33:22,477 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:33:22,478 [INFO] sqlalchemy.engine.Engine: [cached since 343s ago] (1,)
+2022-05-11 19:33:22,487 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:33:22,959 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:33:22,960 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:33:22,960 [INFO] sqlalchemy.engine.Engine: [cached since 343.5s ago] (1,)
+2022-05-11 19:33:37,431 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:33:37,435 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:33:37,436 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:33:37,436 [INFO] sqlalchemy.engine.Engine: [cached since 357.9s ago] (1,)
+2022-05-11 19:33:37,459 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:33:37,573 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:33:37,573 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:33:37,574 [INFO] sqlalchemy.engine.Engine: [cached since 358.1s ago] (1,)
+2022-05-11 19:33:45,400 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:33:45,405 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:33:45,406 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:33:45,406 [INFO] sqlalchemy.engine.Engine: [cached since 365.9s ago] (1,)
+2022-05-11 19:33:45,431 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:33:45,643 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:33:45,643 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:33:45,644 [INFO] sqlalchemy.engine.Engine: [cached since 366.1s ago] (1,)
+2022-05-11 19:33:46,497 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:33:46,503 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:33:46,503 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:33:46,504 [INFO] sqlalchemy.engine.Engine: [cached since 367s ago] (1,)
+2022-05-11 19:33:46,513 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:33:46,601 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:33:46,602 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:33:46,602 [INFO] sqlalchemy.engine.Engine: [cached since 367.1s ago] (1,)
+2022-05-11 19:33:47,188 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:33:47,193 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:33:47,193 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:33:47,194 [INFO] sqlalchemy.engine.Engine: [cached since 367.7s ago] (1,)
+2022-05-11 19:33:47,199 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users
+2022-05-11 19:33:47,199 [INFO] sqlalchemy.engine.Engine: [cached since 313.2s ago] ()
+2022-05-11 19:33:47,208 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:33:47,306 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:33:47,307 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:33:47,307 [INFO] sqlalchemy.engine.Engine: [cached since 367.8s ago] (1,)
+2022-05-11 19:33:47,953 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:33:47,958 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:33:47,958 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:33:47,959 [INFO] sqlalchemy.engine.Engine: [cached since 368.5s ago] (1,)
+2022-05-11 19:33:47,968 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:33:48,453 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:33:48,454 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:33:48,454 [INFO] sqlalchemy.engine.Engine: [cached since 368.9s ago] (1,)
+2022-05-11 19:34:06,473 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:34:06,478 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:34:06,479 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:34:06,479 [INFO] sqlalchemy.engine.Engine: [cached since 387s ago] (1,)
+2022-05-11 19:34:06,503 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:34:06,848 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:34:06,849 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:34:06,849 [INFO] sqlalchemy.engine.Engine: [cached since 387.3s ago] (1,)
+2022-05-11 19:34:31,769 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:34:31,774 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:34:31,775 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:34:31,775 [INFO] sqlalchemy.engine.Engine: [cached since 412.3s ago] (1,)
+2022-05-11 19:34:31,802 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:34:31,918 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:34:31,919 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:34:31,919 [INFO] sqlalchemy.engine.Engine: [cached since 412.4s ago] (1,)
+2022-05-11 19:34:42,372 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:34:42,378 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:34:42,378 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:34:42,379 [INFO] sqlalchemy.engine.Engine: [cached since 422.9s ago] (1,)
+2022-05-11 19:34:42,407 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:34:42,529 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:34:42,530 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:34:42,530 [INFO] sqlalchemy.engine.Engine: [cached since 423s ago] (1,)
+2022-05-11 19:34:46,367 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:34:46,373 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:34:46,374 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:34:46,374 [INFO] sqlalchemy.engine.Engine: [cached since 426.9s ago] (1,)
+2022-05-11 19:34:46,382 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:34:46,480 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:34:46,481 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:34:46,481 [INFO] sqlalchemy.engine.Engine: [cached since 427s ago] (1,)
+2022-05-11 19:34:47,172 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:34:47,177 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:34:47,178 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:34:47,178 [INFO] sqlalchemy.engine.Engine: [cached since 427.7s ago] (1,)
+2022-05-11 19:34:47,185 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:34:47,467 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:34:47,468 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:34:47,468 [INFO] sqlalchemy.engine.Engine: [cached since 428s ago] (1,)
+2022-05-11 19:34:48,217 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:34:48,224 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:34:48,225 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:34:48,226 [INFO] sqlalchemy.engine.Engine: [cached since 428.7s ago] (1,)
+2022-05-11 19:34:48,236 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:34:48,332 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:34:48,333 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:34:48,333 [INFO] sqlalchemy.engine.Engine: [cached since 428.8s ago] (1,)
+2022-05-11 19:35:10,974 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:35:10,980 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:35:10,981 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:35:10,982 [INFO] sqlalchemy.engine.Engine: [cached since 451.5s ago] (1,)
+2022-05-11 19:35:11,005 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:35:11,117 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:35:11,118 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:35:11,119 [INFO] sqlalchemy.engine.Engine: [cached since 451.6s ago] (1,)
+2022-05-11 19:35:29,615 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:35:29,621 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:35:29,622 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:35:29,622 [INFO] sqlalchemy.engine.Engine: [cached since 470.1s ago] (1,)
+2022-05-11 19:35:29,648 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:35:29,758 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:35:29,758 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:35:29,759 [INFO] sqlalchemy.engine.Engine: [cached since 470.3s ago] (1,)
+2022-05-11 19:35:31,359 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:35:31,363 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:35:31,363 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:35:31,364 [INFO] sqlalchemy.engine.Engine: [cached since 471.9s ago] (1,)
+2022-05-11 19:35:31,371 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:35:31,469 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:35:31,469 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:35:31,470 [INFO] sqlalchemy.engine.Engine: [cached since 472s ago] (1,)
+2022-05-11 19:35:32,009 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:35:32,014 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:35:32,014 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:35:32,015 [INFO] sqlalchemy.engine.Engine: [cached since 472.5s ago] (1,)
+2022-05-11 19:35:32,024 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:35:32,112 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:35:32,113 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:35:32,113 [INFO] sqlalchemy.engine.Engine: [cached since 472.6s ago] (1,)
+2022-05-11 19:36:35,664 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:36:35,670 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:36:35,670 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:36:35,671 [INFO] sqlalchemy.engine.Engine: [cached since 536.2s ago] (1,)
+2022-05-11 19:36:48,375 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:36:48,376 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:36:48,376 [INFO] sqlalchemy.engine.Engine: [cached since 548.9s ago] (1,)
+2022-05-11 19:36:48,400 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:36:48,547 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:36:48,548 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:36:48,549 [INFO] sqlalchemy.engine.Engine: [cached since 549s ago] (1,)
+2022-05-11 19:39:10,464 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:39:10,470 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:39:10,470 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:39:10,471 [INFO] sqlalchemy.engine.Engine: [cached since 691s ago] (1,)
+2022-05-11 19:39:10,496 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:39:10,622 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:39:10,622 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:39:10,623 [INFO] sqlalchemy.engine.Engine: [cached since 691.1s ago] (1,)
+2022-05-11 19:39:11,923 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:39:11,928 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:39:11,928 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:39:11,928 [INFO] sqlalchemy.engine.Engine: [cached since 692.4s ago] (1,)
+2022-05-11 19:39:11,935 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:39:12,029 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:39:12,030 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:39:12,030 [INFO] sqlalchemy.engine.Engine: [cached since 692.5s ago] (1,)
+2022-05-11 19:40:59,521 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:40:59,526 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:40:59,527 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:40:59,527 [INFO] sqlalchemy.engine.Engine: [cached since 800s ago] (1,)
+2022-05-11 19:41:08,752 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:41:08,753 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:41:08,753 [INFO] sqlalchemy.engine.Engine: [cached since 809.2s ago] (1,)
+2022-05-11 19:41:18,824 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:41:18,825 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:41:18,825 [INFO] sqlalchemy.engine.Engine: [cached since 819.3s ago] (1,)
+2022-05-11 19:41:56,276 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:41:56,276 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:41:56,277 [INFO] sqlalchemy.engine.Engine: [cached since 856.8s ago] (1,)
+2022-05-11 19:41:56,303 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:41:56,437 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:41:56,437 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:41:56,438 [INFO] sqlalchemy.engine.Engine: [cached since 856.9s ago] (1,)
+2022-05-11 19:42:05,800 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:42:05,806 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:42:05,806 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:42:05,807 [INFO] sqlalchemy.engine.Engine: [cached since 866.3s ago] (1,)
+2022-05-11 19:42:05,832 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:42:05,927 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:42:05,928 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:42:05,928 [INFO] sqlalchemy.engine.Engine: [cached since 866.4s ago] (1,)
+2022-05-11 19:42:08,965 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:42:08,970 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:42:08,971 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:42:08,972 [INFO] sqlalchemy.engine.Engine: [cached since 869.5s ago] (1,)
+2022-05-11 19:42:08,981 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:42:09,069 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:42:09,070 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:42:09,070 [INFO] sqlalchemy.engine.Engine: [cached since 869.6s ago] (1,)
+2022-05-11 19:42:09,651 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:42:09,658 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:42:09,658 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:42:09,659 [INFO] sqlalchemy.engine.Engine: [cached since 870.2s ago] (1,)
+2022-05-11 19:42:09,666 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users
+2022-05-11 19:42:09,666 [INFO] sqlalchemy.engine.Engine: [cached since 815.6s ago] ()
+2022-05-11 19:42:09,676 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:42:09,780 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:42:09,781 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:42:09,781 [INFO] sqlalchemy.engine.Engine: [cached since 870.3s ago] (1,)
+2022-05-11 19:42:11,876 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:42:11,880 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:42:11,880 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:42:11,881 [INFO] sqlalchemy.engine.Engine: [cached since 872.4s ago] (1,)
+2022-05-11 19:42:11,890 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:42:11,983 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:42:11,984 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:42:11,985 [INFO] sqlalchemy.engine.Engine: [cached since 872.5s ago] (1,)
+2022-05-11 19:42:14,653 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:42:14,659 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:42:14,659 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:42:14,660 [INFO] sqlalchemy.engine.Engine: [cached since 875.2s ago] (1,)
+2022-05-11 19:42:14,671 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:42:14,750 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:42:14,750 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:42:14,751 [INFO] sqlalchemy.engine.Engine: [cached since 875.2s ago] (1,)
+2022-05-11 19:42:18,387 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:42:18,393 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:42:18,394 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:42:18,394 [INFO] sqlalchemy.engine.Engine: [cached since 878.9s ago] (1,)
+2022-05-11 19:42:18,402 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:42:18,503 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:42:18,504 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:42:18,504 [INFO] sqlalchemy.engine.Engine: [cached since 879s ago] (1,)
+2022-05-11 19:44:59,582 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:44:59,585 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:44:59,586 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:44:59,586 [INFO] sqlalchemy.engine.Engine: [cached since 1040s ago] (1,)
+2022-05-11 19:45:15,447 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:45:15,448 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:45:15,448 [INFO] sqlalchemy.engine.Engine: [cached since 1056s ago] (1,)
+2022-05-11 19:49:03,135 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:49:03,136 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:49:03,136 [INFO] sqlalchemy.engine.Engine: [cached since 1284s ago] (1,)
+2022-05-11 19:49:03,159 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:49:03,313 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:49:03,314 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:49:03,314 [INFO] sqlalchemy.engine.Engine: [cached since 1284s ago] (1,)
+2022-05-11 19:49:06,762 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:49:06,765 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:49:06,767 [INFO] sqlalchemy.engine.Engine: SELECT "transaction".id AS transaction_id, "transaction".amount AS transaction_amount, "transaction".transaction_type AS transaction_transaction_type, "transaction".user_id AS transaction_user_id 
+FROM "transaction"
+ LIMIT ? OFFSET ?
+2022-05-11 19:49:06,767 [INFO] sqlalchemy.engine.Engine: [generated in 0.00031s] (1000, 0)
+2022-05-11 19:49:06,772 [INFO] sqlalchemy.engine.Engine: SELECT count(*) AS count_1 
+FROM (SELECT "transaction".id AS transaction_id, "transaction".amount AS transaction_amount, "transaction".transaction_type AS transaction_transaction_type, "transaction".user_id AS transaction_user_id 
+FROM "transaction") AS anon_1
+2022-05-11 19:49:06,773 [INFO] sqlalchemy.engine.Engine: [generated in 0.00044s] ()
+2022-05-11 19:49:06,775 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:49:06,776 [INFO] sqlalchemy.engine.Engine: [cached since 1287s ago] (1,)
+2022-05-11 19:49:06,792 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:49:06,902 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:49:06,903 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:49:06,903 [INFO] sqlalchemy.engine.Engine: [cached since 1287s ago] (1,)
+2022-05-11 19:49:08,505 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:49:08,511 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:49:08,511 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:49:08,512 [INFO] sqlalchemy.engine.Engine: [cached since 1289s ago] (1,)
+2022-05-11 19:49:08,530 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:49:09,057 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:49:09,058 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:49:09,058 [INFO] sqlalchemy.engine.Engine: [cached since 1290s ago] (1,)
+2022-05-11 19:49:42,718 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:49:42,725 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:49:42,726 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:49:42,727 [INFO] sqlalchemy.engine.Engine: [cached since 1323s ago] (1,)
+2022-05-11 19:50:28,413 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 19:50:28,456 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:50:28,456 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:50:28,457 [INFO] sqlalchemy.engine.Engine: [cached since 1369s ago] (1,)
+2022-05-11 19:50:31,165 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:50:31,166 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:50:31,166 [INFO] sqlalchemy.engine.Engine: [cached since 1372s ago] (1,)
+2022-05-11 19:51:43,332 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:51:43,334 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:51:43,335 [INFO] sqlalchemy.engine.Engine: [generated in 0.00040s] (1,)
+2022-05-11 19:52:19,677 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:52:19,680 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:52:19,680 [INFO] sqlalchemy.engine.Engine: [generated in 0.00048s] (1,)
+2022-05-11 19:53:00,259 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:53:00,261 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:53:00,261 [INFO] sqlalchemy.engine.Engine: [generated in 0.00048s] (1,)
+2022-05-11 19:53:15,219 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:53:15,222 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:53:15,223 [INFO] sqlalchemy.engine.Engine: [generated in 0.00135s] (1,)
+2022-05-11 19:53:44,062 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:53:44,064 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:53:44,065 [INFO] sqlalchemy.engine.Engine: [generated in 0.00058s] (1,)
+2022-05-11 19:55:16,974 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:55:16,977 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:55:16,977 [INFO] sqlalchemy.engine.Engine: [generated in 0.00050s] (1,)
+2022-05-11 19:58:26,561 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:58:26,563 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:58:26,564 [INFO] sqlalchemy.engine.Engine: [generated in 0.00059s] (1,)
+2022-05-11 19:58:29,335 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:58:29,336 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:58:29,336 [INFO] sqlalchemy.engine.Engine: [cached since 2.773s ago] (1,)
+2022-05-11 19:58:38,439 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 19:58:38,441 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 19:58:38,441 [INFO] sqlalchemy.engine.Engine: [generated in 0.00040s] (1,)
+2022-05-11 20:00:16,059 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 20:00:16,061 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 20:00:16,062 [INFO] sqlalchemy.engine.Engine: [generated in 0.00045s] (1,)
+2022-05-11 20:01:58,417 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 20:01:58,417 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 20:01:58,417 [INFO] sqlalchemy.engine.Engine: [cached since 102.4s ago] (1,)
+2022-05-11 20:07:29,642 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 20:07:29,644 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 20:07:29,644 [INFO] sqlalchemy.engine.Engine: [generated in 0.00053s] (1,)
+2022-05-11 20:07:46,325 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 20:07:46,328 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 20:07:46,328 [INFO] sqlalchemy.engine.Engine: [generated in 0.00052s] (1,)
+2022-05-11 20:07:53,001 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 20:07:53,002 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 20:07:53,002 [INFO] sqlalchemy.engine.Engine: [cached since 6.675s ago] (1,)
+2022-05-11 20:07:58,671 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-05-11 20:07:58,678 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 20:07:58,679 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 20:07:58,679 [INFO] sqlalchemy.engine.Engine: [cached since 12.35s ago] (1,)
+2022-05-11 20:09:43,191 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 20:09:43,193 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 20:09:43,193 [INFO] sqlalchemy.engine.Engine: [generated in 0.00051s] (1,)
+2022-05-11 20:09:59,184 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 20:09:59,188 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 20:09:59,188 [INFO] sqlalchemy.engine.Engine: [generated in 0.00067s] (1,)
+2022-05-11 20:10:07,080 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 20:10:07,082 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 20:10:07,082 [INFO] sqlalchemy.engine.Engine: [generated in 0.00048s] (1,)
+2022-05-11 20:10:23,948 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 20:10:23,951 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 20:10:23,951 [INFO] sqlalchemy.engine.Engine: [generated in 0.00046s] (1,)
+2022-05-11 20:12:38,144 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 20:12:38,144 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 20:12:38,145 [INFO] sqlalchemy.engine.Engine: [cached since 134.2s ago] (1,)
+2022-05-11 20:15:29,991 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-11 20:15:29,991 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-05-11 20:15:29,992 [INFO] sqlalchemy.engine.Engine: [cached since 306s ago] (1,)
