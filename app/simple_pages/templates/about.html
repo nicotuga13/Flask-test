@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block content %}
+    About Page
+    <body>
+        <center>
+            <svg class="bd-placeholder-img rounded-circle" width="100" height="50" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 100x50" preserveAspectRatio="xMidYMid slice" focusable="false"><img src="{{ url_for('static', filename='images/highlanders.png') }}" class="d-block w-50" alt="Picture of docker logo"><rect width="100%" height="80%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em"></text></svg>
+        </center>
+        <div class="row">
+            <div class="col-lg-9">
+                <div>
+                    <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><img src="{{ url_for('static', filename='images/cspic.jpg') }}" class="d-block w-50"><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em"></text></svg>
+                    <h2>About Me:</h2>
+                    <p>My name is Nicolas Cardozo, and I am a very ambitious student, currently pursuing degree in Computer Science.
+                        Motivated programmer, with engaging demeanor, known for working well in deadline-driven environments.
+                        Experienced in various languages such as Python, Java, C, PHP and others, while currently learning other useful
+                        languages such as JavaScript and assembly. Successful at managing teams, driving progress towards project milestones,
+                        quality assurance, and on-time delivery.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-2" id="sidebar">
+                <br><br><br><br><br><br><br><br>
+                <h3>Read More</h3>
+                <h3><a href="https://github.com/nicktuga13">Link to GitHub</a></h3>
+                <h3><a href="https://hub.docker.com/u/nicktuga13">Link to docker hub</a></h3>
+            </div>
+        </div>
+    </body>
+{% endblock %}
