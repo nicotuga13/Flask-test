@@ -3,10 +3,12 @@
 DEV
 
 [![Development Workflow 3.8](https://github.com/nicktuga13/flask-final/actions/workflows/dev.yml/badge.svg)](https://github.com/nicktuga13/flask-final/actions/workflows/dev.yml)
+* https://nc363-dev4.herokuapp.com/
 
 PROD
 
 [![Production Workflow 1](https://github.com/nicktuga13/flask-final/actions/workflows/prod.yml/badge.svg)](https://github.com/nicktuga13/flask-final/actions/workflows/prod.yml)
+*https://nc363-prod4.herokuapp.com/
 
 4th and Final project for IS218 at NJIT.
 
