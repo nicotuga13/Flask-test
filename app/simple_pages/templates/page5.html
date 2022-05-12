@@ -1,0 +1,143 @@
+{% extends "base.html" %}
+{% block content %}
+    Page 5
+    <body>
+        <center>
+            <svg class="bd-placeholder-img rounded-circle" width="140" height="70" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><img src="{{ url_for('static', filename='images/oop.png') }}" class="d-block w-50" alt="Picture of docker logo"><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em"></text></svg>
+        </center>
+        <div class="row">
+            <div class="col-lg-9">
+                <div>
+                    <h2>Instantiation</h2>
+                    <p>Instantiation in computer science refers to the creation of an object, an instance of a class,
+                        in an object-oriented programming (OOP) language.</p>
+                </div>
+                <div>
+                    <br>
+                    <h2>Object</h2>
+                    <p>an object is an element or instance of a class. objects have the behaviors of their class.
+                        The object is the actual component of programs, while the class specifies how instances are created and how they behave.</p>
+                </div>
+                <br>
+                <div>
+                    <h2>Class</h2>
+                    <p>A class describes the contents of the objects that belong to it: it describes an aggregate of data fields, and defines the methods.</p>
+                </div>
+                <br>
+                <div>
+                    <h2>Namespace</h2>
+                    <p>A namespace is a declarative region that provides a scope to the identifiers inside it.
+                        Namespaces are used to organize code into logical groups and to prevent name collisions that can occur especially
+                        when your code base includes multiple libraries.</p>
+                </div>
+                <br>
+                <div>
+                    <h2>Constructor</h2>
+                    <p>A constructor is a special type of subroutine called to create an object. It prepares the new object for use,
+                        often accepting arguments that the constructor uses to set required member variables.</p>
+                </div>
+                <br>
+                <div>
+                    <h2>Fixture</h2>
+                    <p>The purpose of a test fixture is to ensure that there is a well known and fixed environment in which
+                        tests are run so that results are repeatable. Some people call this the test context.</p>
+                </div>
+                <br>
+                <div>
+                    <h2>Type Hint</h2>
+                    <p>As the code base gets larger, type hints can help to debug and prevent some dumb mistakes. If you’re using an IDE like PyCharm,
+                        you’ll get a warning message whenever you’ve used the wrong data type, provided you’re using type hints.</p>
+                </div>
+                <br>
+                <div>
+                    <h2>Type Cast</h2>
+                    <p>Typecast is a way of changing an object from one data type to the next.
+                        It is used in computer programming to ensure a function handles the variables correctly. </p>
+                </div>
+                <br>
+                <div>
+                    <h2>Unit Test</h2>
+                    <p>Object-oriented unit tests are programs that test classes. Each test case consists of a fixed sequence
+                        of method invocations with fixed arguments that explores a particular aspect of the behavior of the class under test.</p>
+                </div>
+                <br>
+                <div>
+                    <h2>Static</h2>
+                    <p>A static means that the particular member belongs to a type itself, rather than to an instance of that type.</p>
+                </div>
+                <br>
+                <div>
+                    <h2>Instance Method</h2>
+                    <p>An instance method is a method that belongs to instances of a class, not to the class itself.</p>
+                </div>
+                <br>
+                <div>
+                    keyword static means that the particular member belongs to a type itself, rather than to an instance of that type.
+                    <h2>Instance Property</h2>
+                    <p>A property is a member that provides a flexible mechanism to read, write, or compute the value of a private field.</p>
+                </div>
+                <br>
+                <div>
+                    <h2>Static Method</h2>
+                    <p>A class variable of a statically defined class, a member variable of a given class which is shared across all instances,
+                        and is accessible as a member variable of these objects.</p>
+                </div>
+                <br>
+                <div>
+                    <h2>Encapsulation</h2>
+                    <p>Encapsulation refers to the bundling of data, along with the methods that operate on that data, into a single unit.</p>
+
+                </div>
+                <br>
+                <div>
+                    <h2>Inheritance</h2>
+                    <p>Inheritance is a mechanism that allows one class to gain the properties of another class,
+                        in the same way, that a child inherits some attributes from each of their parents.
+                        Inheritance allows programmers to create a new class that reuses the data members and methods of an existing class.</p>
+                </div>
+                <br>
+                <div>
+                    <h2>Polymorphism</h2>
+                    <p>Describes the concept that you can access objects of different types through the same interface.
+                        Each type can provide its own independent implementation of this interface.</p>
+                </div>
+                <br>
+                <div>
+                    <h2>Abstraction</h2>
+                    <p>Abstraction occurs when a programmer hides any irrelevant data about an object or an instantiated class
+                        to reduce complexity and help users interact with a program more efficiently.</p>
+                </div>
+            </div>
+            <div class="col-lg-2" id="sidebar">
+                <br><br><br><br><br><br><br><br>
+                <h3>Read More</h3>
+                <p><strong><a href="https://www.sumologic.com/glossary/encapsulation/">OOP Concepts</a></strong></p>
+                <p><strong><a href="https://caml.inria.fr/pub/docs/oreilly-book/html/book-ora140.html">Terms and Defs</a></strong></p>
+                <p><strong><a href="https://www.techopedia.com/definition/26857/instantiate">Instantiation</a></strong></p>
+                <p><strong><a href="https://www.digitalocean.com/community/conceptual_articles/s-o-l-i-d-the-first-five-principles-of-object-oriented-design#open-closed-principle">SOLID Overview</a></strong></p>
+                <p><strong><a href="https://www.oodesign.com/">Design Patterns</a></strong></p>
+
+            </div>
+
+            <div>
+                <h2>SOLID Overview</h2>
+                <p>SOLID is an acronym for the first five object-oriented design principles. These principles establish practices
+                    that lend to developing software with considerations for maintaining and extending as the project grows.</p>
+                <ul>
+                    <h3>Solid Stands For</h3>
+                    <li>Single Responsibility Principle - A class should have one and only one reason to change, meaning that a class should have only one job.</li>
+                    <li>Open-Closed Principle - Objects or entities should be open for extension but closed for modification.</li>
+                    <li>Liskov Substitution Principle - Let q(x) be a property provable about objects of x of type T. Then q(y) should be provable for objects y of type S where S is a subtype of T.</li>
+                    <li>Interface Segregation Principle - A client should never be forced to implement an interface that it doesn’t use, or clients shouldn’t be forced to depend on methods they do not use.</li>
+                    <li>Dependency Inversion Principle - Entities must depend on abstractions, not on concretions. It states that the high-level module must not depend on the low-level module, but they should depend on abstractions.</li>
+                </ul>
+            </div>
+            <div>
+                <h2>Design Patterns</h2>
+                <p>Design Patterns are reusable solutions to commonly occuring problems. Design patterns were started as
+                    best practices that were applied again and again to similar problems encountered in different contexts.</p>
+            </div>
+
+        </div>
+    </body>
+{% endblock %}

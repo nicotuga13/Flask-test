@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block content %}
+    Page 4
+    <body>
+        <center>
+            <svg class="bd-placeholder-img rounded-circle" width="140" height="70" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><img src="{{ url_for('static', filename='images/ci-cd.jpg') }}" class="d-block w-50" alt="Picture of docker logo"><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em"></text></svg>
+        </center>
+        <div class="row">
+            <div class="col-lg-9">
+                <div>
+                    <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><img src="{{ url_for('static', filename='images/gitactions.png') }}" class="d-block w-50"><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em"></text></svg>
+                    <h2>Project Setup</h2>
+                    <p>This project is set up to use GitHub actions. It features two YML files in the .github/workflows folder, one titled dev.yml and another called prod.yml. The result is when you create a pull request to merge a branch to master, it will deploy to a heroku development app hence the name dev.yml. When you merge or push to master on github, it will deploy the app to the production heroku app hence the other name, prod.yml.</p>
+                </div>
+                <div>
+                    <br>
+                    <h2>Deploying Image to Docker</h2>
+                    <p>The prod.yml file in .github/worflows folder states on push to master, a container is built. It then logs in to docker hub with the secrets set on github and proceeds to build and push to the docker hub repo.</p>
+                </div>
+                <br>
+                <div>
+                    <h2>Benefits of CI:CD</h2>
+                    <p>Three huge benefits of using continuous integration and deployment are build stability, speed and automation.
+                    The automation functions as a subclass of stability of speed. Having the deployment and integration being done automatically can reduce the number of needless errors and keep the build moving forward
+                    much more efficiently. "Asking people to type in strange commands or clicking through dialog boxes is a waste of time and a breeding ground for mistakes."(Martin Fowler, 2006). Stability is a huge benefit and the main point
+                    of working with continuous integration, the point being to always be working on a stable base. A system breaking implementation can simply be removed by rolling back to the last working build. "Often the fastest way to fix the build is to revert the latest commit from the mainline, taking the system back to the last-known good build. Certainly the team should not try to do any debugging on a broken mainline."(Martin Fowler, 2006).
+                    The speed benefit is the culmination of the previous two benefits. Less time working on broken builds and simple mistakes in deployment mean a much faster completion time on tasks.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-2" id="sidebar">
+                <br><br><br><br><br><br><br><br>
+                <h3>Read More</h3>
+                <p><strong><a href="https://www.martinfowler.com/articles/continuousIntegration.html">Continuous Integration</a></strong></p>
+                <p><strong><a href="https://www.martinfowler.com/bliki/ContinuousDelivery.html">Continuous Delivery</a></strong></p>
+            </div>
+        </div>
+    </body>
+{% endblock %}

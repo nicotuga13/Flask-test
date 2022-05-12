@@ -24,7 +24,7 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item">
-          <center><img src="{{ url_for('static', filename='images/oop.png') }}" class="d-block w-50" height="425" alt="Picture of oop"></center>
+          <a href="{{ url_for('simple_pages.show', page="page5")}}"><center><img src="{{ url_for('static', filename='images/oop.png') }}" class="d-block w-50" height="425" alt="Picture of oop"></center></a>
         <div class="container">
             <!-- DOCKER -->
           <div class="carousel-caption text-start">
@@ -34,7 +34,7 @@
 
       <div class="carousel-item">
           <!-- GIT -->
-          <center><img src="{{ url_for('static', filename='images/unit-test-design-part1-aaa_01.jpg') }}" class="d-block w-50" height="425" alt="Picture of the git logo"></center>
+          <a href="{{ url_for('simple_pages.show', page="page6")}}"><center><img src="{{ url_for('static', filename='images/unit-test-design-part1-aaa_01.jpg') }}" class="d-block w-50" height="425" alt="Picture of the git logo"></center></a>
         <div class="container">
           <div class="carousel-caption">
           </div>
@@ -43,7 +43,7 @@
 
       <div class="carousel-item">
           <!-- FLASK/PYTHON -->
-          <center><img src="{{ url_for('static', filename='images/pylint.png') }}" class="d-block w-50" height="425" alt="Picture of the git logo"></center>
+          <a href="{{ url_for('simple_pages.show', page="page9")}}"><center><img src="{{ url_for('static', filename='images/pylint.png') }}" class="d-block w-50" height="425" alt="Picture of the git logo"></center></a>
         <div class="container">
           <div class="carousel-caption">
           </div>
@@ -53,7 +53,7 @@
       <div class="carousel-item active">
           <!-- CICD -->
 
-         <center><img src="{{ url_for('static', filename='images/solid.png') }}" class="d-block w-50" height="425" alt="Picture of the git logo"></center>
+          <a href="{{ url_for('simple_pages.show', page="page8")}}"><center><img src="{{ url_for('static', filename='images/solid.png') }}" class="d-block w-50" height="425" alt="Picture of the git logo"></center></a>
         <div class="container">
           <div class="carousel-caption text-end">
           </div>
@@ -77,6 +77,7 @@
 
         <h2>Git</h2>
         <p>Learn more about Branches, Merge, Commit, Tags, Repositories.</p>
+        <p><a class="btn btn-secondary" href="{{ url_for('simple_pages.show', page="page1")}}">View details »</a></p>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-3">
 
@@ -84,18 +85,21 @@
 
         <h2>Docker</h2>
         <p> About containers, images, link to a project repository on docker hub, docker commands and how to start a project and access containers</p>
+        <p><a class="btn btn-secondary" href="{{ url_for('simple_pages.show', page="page2")}}">View details »</a></p>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-3">
         <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><img src="{{ url_for('static', filename='images/flasklogo.png') }}" class="d-block w-50" alt="Picture of the game logo"><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em"></text></svg>
 
         <h2>Python/Flask</h2>
         <p>Testing with pytest and examples from code. How simple pages was created and tested. Project Link to Github and flask, flask Blueprint documentation, and flask testing with PyTest. Purpose of every file in the project.</p>
+        <p><a class="btn btn-secondary" href="{{ url_for('simple_pages.show', page="page3")}}">View details »</a></p>
       </div><!-- /.col-lg-4 -->
         <div class="col-lg-3">
         <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><img src="{{ url_for('static', filename='images/ci-cd.jpg') }}" class="d-block w-50" alt="Picture of the game logo"><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em"></text></svg>
 
         <h2>Continuous Integration and Deployment</h2>
         <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+        <p><a class="btn btn-secondary" href="{{ url_for('simple_pages.show', page="page4")}}">View details »</a></p>
       </div><!-- /.col-lg-4 -->
     </div>
 

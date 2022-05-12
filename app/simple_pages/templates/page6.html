@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block content %}
+    Page 6
+    <body>
+        <center>
+            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><img src="{{ url_for('static', filename='images/unit-test-design-part1-aaa_01.jpg') }}" class="d-block w-50" alt="Picture of the game logo"><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em"></text></svg>
+        </center>
+        <div class="row">
+            <div class="col-lg-9">
+                <div>
+                    <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><img src="{{ url_for('static', filename='images/test_shape.png') }}" class="d-block w-50" alt="Picture of the game logo"><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em"></text></svg>
+                    <h2>AAA</h2>
+                    <p>The Arrange-Act-Assert pattern of testing focuses each test on a single action.
+                        The advantage of this focus is that it clearly separates the arrangement of the System Under Test
+                        and the assertions that are made on it after the action.</p>
+                    <p> The picture above of the blurred lines of code, follows the AAA design.</p>
+                    <ul>
+                        <li>The first 6 lines, are the test definition, docstring and arrangement.</li>
+                        <li>Empty line to better visualize.</li>
+                        <li>In the middle, there is a single line of code, the act.</li>
+                        <li>Another empty line to better visualize.</li>
+                        <li>Finally there are the Assertions. You can see that the Assert block code lines all start with the yellow color</li>
+                    </ul>
+                    <h3>Example: </h3>
+                    <svg class="bd-placeholder-img rounded-circle" width="0" height="0" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><img src="{{ url_for('static', filename='images/AAAthing2.png') }}" class="d-block w-50"><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em"></text></svg>
+                    <ul>
+                        <li>Arrange is the block of code that sets up the conditions for the test action. Here it is initiating a variable called negative and giving it the value -5</li>
+                        <li>Action is the line of code where the Action is taken. Here we call the function abs(takes a number and returns the absolute value)</li>
+                        <li>ASSERT is the block of code that performs the assertions on the state of the after the action. Here it is where we check that the function returned the correct value 5</li>
+                    </ul>
+
+                </div>
+            </div>
+
+
+            <div class="col-lg-2" id="sidebar">
+                <br><br><br><br><br>
+                <h3>Read More </h3>
+                <p><strong><a href="https://automationpanda.com/2020/07/07/arrange-act-assert-a-pattern-for-writing-good-tests/">AAA testing</a></strong></p>
+                <p><strong><a href="https://jamescooke.info/arrange-act-assert-pattern-for-python-developers.html">AAA Pattern</a></strong></p>
+            </div>
+        </div>
+    </body>
+{% endblock %}

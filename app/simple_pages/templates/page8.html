@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block content %}
+    Page 8
+    <body>
+        <center>
+            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><img src="{{ url_for('static', filename='images/solid.png') }}" class="d-block w-50" alt="Picture of the game logo"><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em"></text></svg>
+        </center>
+        <div class="row">
+            <div class="col-lg-9">
+                <div>
+                <h2>SOLID Overview</h2>
+                <p>SOLID is an acronym for the first five object-oriented design principles. These principles establish practices
+                    that lend to developing software with considerations for maintaining and extending as the project grows.</p>
+                <ul>
+                    <h3>Solid Stands For</h3>
+                    <li>Single Responsibility Principle - A class should have one and only one reason to change, meaning that a class should have only one job.</li>
+                    <li>Open-Closed Principle - Objects or entities should be open for extension but closed for modification.</li>
+                    <li>Liskov Substitution Principle - Let q(x) be a property provable about objects of x of type T. Then q(y) should be provable for objects y of type S where S is a subtype of T.</li>
+                    <li>Interface Segregation Principle - A client should never be forced to implement an interface that it doesn’t use, or clients shouldn’t be forced to depend on methods they do not use.</li>
+                    <li>Dependency Inversion Principle - Entities must depend on abstractions, not on concretions. It states that the high-level module must not depend on the low-level module, but they should depend on abstractions.</li>
+                </ul>
+            </div>
+            <div>
+                <h2>Design Patterns</h2>
+                <p>Design Patterns are reusable solutions to commonly occuring problems. Design patterns were started as
+                    best practices that were applied again and again to similar problems encountered in different contexts.</p>
+            </div>
+            </div>
+
+
+            <div class="col-lg-2" id="sidebar">
+                <br><br><br><br><br>
+                <h3>Read More </h3>
+                <p><strong><a href="https://automationpanda.com/2020/07/07/arrange-act-assert-a-pattern-for-writing-good-tests/">AAA testing</a></strong></p>
+                <p><strong><a href="https://jamescooke.info/arrange-act-assert-pattern-for-python-developers.html">AAA Pattern</a></strong></p>
+            </div>
+        </div>
+    </body>
+{% endblock %}

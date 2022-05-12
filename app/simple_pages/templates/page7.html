@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block content %}
+    Page 7
+    <body>
+        <center>
+            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><img src="{{ url_for('static', filename='images/java-oops.png') }}" class="d-block w-50" alt="Picture of the game logo"><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em"></text></svg>
+        </center>
+        <div class="row">
+            <div class="col-lg-9">
+                <div>
+                    <h1>The 4 Principles of Object-Oriented Programming</h1>
+                    <div>
+                    <h3>Encapsulation</h3>
+                    <p>Encapsulation refers to the bundling of data, along with the methods that operate on that data, into a single unit.</p>
+
+                </div>
+                <br>
+                <div>
+                    <h3>Inheritance</h3>
+                    <p>Inheritance is a mechanism that allows one class to gain the properties of another class,
+                        in the same way, that a child inherits some attributes from each of their parents.
+                        Inheritance allows programmers to create a new class that reuses the data members and methods of an existing class.</p>
+                </div>
+                <br>
+                <div>
+                    <h3>Polymorphism</h3>
+                    <p>Describes the concept that you can access objects of different types through the same interface.
+                        Each type can provide its own independent implementation of this interface.</p>
+                </div>
+                <br>
+                <div>
+                    <h3>Abstraction</h3>
+                    <p>Abstraction occurs when a programmer hides any irrelevant data about an object or an instantiated class
+                        to reduce complexity and help users interact with a program more efficiently.</p>
+                </div>
+
+                </div>
+            </div>
+
+
+            <div class="col-lg-2" id="sidebar">
+                <br><br><br><br><br>
+                <h3>Read More </h3>
+                <p><strong><a href="https://automationpanda.com/2020/07/07/arrange-act-assert-a-pattern-for-writing-good-tests/">AAA testing</a></strong></p>
+                <p><strong><a href="https://jamescooke.info/arrange-act-assert-pattern-for-python-developers.html">AAA Pattern</a></strong></p>
+            </div>
+        </div>
+    </body>
+{% endblock %}

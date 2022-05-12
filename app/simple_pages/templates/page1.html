@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block content %}
+    Page 1
+    <body>
+        <center>
+            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><img src="{{ url_for('static', filename='images/1color-lightbg@2x.png') }}" class="d-block w-50" alt="Picture of the game logo"><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em"></text></svg>
+        </center>
+        <div class="row">
+            <div class="col-lg-9">
+                <div>
+                    <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><img src="{{ url_for('static', filename='images/git-branches-merge.png') }}" class="d-block w-50" alt="Picture of the game logo"><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em"></text></svg>
+                    <h2>Branches</h2>
+                    <p>A branch represents an independent line of development. Branches serve as an abstraction for the edit/stage/commit process.<br>
+                    You can think of them as a way to request a brand new working directory, staging area, and project history. New commits are recorded in the history for the current branch, which results in a fork in the history of the project.</p>
+                </div>
+                <div>
+                    <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><img src="{{ url_for('static', filename='images/local-and-remote-git-repositories.jpg') }}" class="d-block w-50" alt="Picture of the game logo"><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em"></text></svg>
+                    <h2>Repositories</h2>
+                    <p>A repository contains all of your project's files and each file's revision history. You can discuss and manage your project's work within the repository.
+                        You can own repositories individually, or you can share ownership of repositories with other people in an organization.</p>
+                </div>
+                <br>
+                <div>
+                    <h2>Tags</h2>
+                    <p>Git has the ability to tag specific points in a repository’s history as being important. Typically, people use this functionality to mark release points.Git supports two types of tags: lightweight and annotated.
+                        A lightweight tag is very much like a branch that doesn’t change, it’s just a pointer to a specific commit. Annotated tags, however, are stored as full objects in the Git database. They’re checksummed; contain the tagger name,
+                        email, and date; have a tagging message; and can be signed and verified with GNU Privacy Guard (GPG).</p>
+                </div>
+                <div>
+                    <br>
+                </div>
+                <div>
+                    <h2>Commit</h2>
+                    <p>When you commit, you are taking a “snapshot” of your repository at that point in time, giving you a checkpoint to which you can reevaluate or restore your project to any previous state.</p>
+                </div>
+
+                <div>
+                    <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><img src="{{ url_for('static', filename='images/merge.png') }}" class="d-block w-50" alt="Picture of the game logo"><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em"></text></svg>
+                    <h2>Merge</h2>
+                    <p>Merging is Git's way of putting a forked history back together again. The git merge command lets you take the independent lines of development created by git branch and integrate them into a single branch.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-2" id="sidebar">
+                <br><br><br><br><br>
+                <h3>Read More </h3>
+                <p><strong><a href="https://git-scm.com/book/en/v2/Git-Branching-Branching-Workflows">Branches</a></strong></p>
+                <p><strong><a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories">Repositories</a></strong></p>
+                <p><strong><a href="https://git-scm.com/book/en/v2/Git-Basics-Tagging">Tags</a></strong></p>
+                <p><strong><a href="https://git-scm.com/docs/git-commit">Commit</a></strong></p>
+                <p><strong><a href="https://git-scm.com/docs/git-merge">Merge</a></strong></p>
+
+            </div>
+        </div>
+    </body>
+{% endblock %}
