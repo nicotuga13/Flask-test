@@ -1,0 +1,102 @@
+{% extends "base.html" %}
+{% block content %}
+    Page 3
+    <body>
+        <center>
+            <svg class="bd-placeholder-img rounded-circle" width="140" height="70" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><img src="{{ url_for('static', filename='images/flaskcar2.png') }}" class="d-block w-50" alt="Picture of docker logo"><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em"></text></svg>
+        </center>
+        <div class="row">
+            <div class="col-lg-9">
+                <div>
+                    <h2>Project Setup</h2>
+                    <p>This project is set up to use GitHub actions. It features two YML files in the .github/workflows folder, one titled dev.yml and another called prod.yml. The result is when you create a pull request to merge a branch to master, it will deploy to a heroku development app hence the name dev.yml. When you merge or push to master on github, it will deploy the app to the production heroku app hence the other name, prod.yml.</p>
+                </div>
+                <div>
+                    <br>
+                    <h2>Deploying Image to Docker</h2>
+                    <p>The prod.yml file in .github/worflows folder states on push to master, a container is built. It then logs in to docker hub with the secrets set on github and proceeds to build and push to the docker hub repo.</p>
+                </div>
+                <br>
+                <div>
+                    <h2>File Breakdown</h2>
+                    <ul>
+                        <li>nc363_docker_flask <- root folder.
+                            <ul>
+                                <li>.github <- contains workflows folder.
+                                    <ul>
+                                        <li>workflows <- contain github actions for continuous integration and deployment.
+                                            <ul>
+                                                <li>dev.yml <- On pull request to master deploy to heroku dev app.</li>
+                                                <li>prod.yml <- On push request to master, deploys to docker hub repository and heroku production app.</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>.pytest_cahce <- Contains data from the pytest's cache plugin.</li>
+                                <li>app
+                                    <ul>
+                                        <li>context_processors <- Defines context processor functions such as current_year.</li>
+                                        <li>simple_pages <- Directory for the webpage files. Uses blueprint and render template imported from flask to create the webpages.
+                                            <ul>
+                                                <li>Templates <- where the page files are located.
+                                                    <ul>
+                                                        <li>index.html <- Home page of website.</li>
+                                                        <li>page1.html <- Git page.</li>
+                                                        <li>page2.html <- Docker page.</li>
+                                                        <li>page3.html <- Python/Flask page. (This page)</li>
+                                                        <li>page4.html <- Continuous integration and deployment page.</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>static
+                                            <ul>
+                                                <li>css <- Contains the css used in the pages.</li>
+                                                <li>images <- Contains the images used.</li>
+                                                <li>js <- Contains the javaScript used.</li>
+                                            </ul>
+                                        </li>
+                                        <li>templates
+                                            <ul>
+                                                <li>base.html <- contains header and formatting for the files inside simple pages folder to create the webpages.</li>
+                                            </ul>
+                                        </li>
+                                        <li>__init__.py <- Defines the create app function which creates the webpages.</li>
+                                        <li>run.py <- Runs the create app function.</li>
+                                        <li>calculator
+                                            <ul>
+                                                <li>calculation <- not yet used.</li>
+                                                <li>operations <- Creates the operation classes and defines the method to use them.</li>
+                                                <li>__init__.py <- Defines the calculator class and its methods.</li>
+                                            </ul>
+                                        </li>
+                                        <li>tests
+                                            <ul>
+                                                <li>__init__.py</li>
+                                                <li>calculator_test.py <- test the calculator methods such as add, subtract and multiply.</li>
+                                                <li>conftest.py <- Tests creating the app using pytest and create app function found in the app folder.</li>
+                                                <li>context_process_test.py <- Tests the functions defined in context_processors found in the app package.</li>
+                                                <li>operations_test.py <- Tests the functions defined in operations found in the calculator folder.</li>
+                                                <li>simple_pagest_test.py <- Tests creating the webpages.</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-2" id="sidebar">
+                <br><br><br><br><br><br><br><br>
+                <h3>Read More</h3>
+                <p><a href="https://flask.palletsprojects.com/en/2.0.x/blueprints/">Flask Blueprint Documentation 1</a></p>
+                <p><a href="http://exploreflask.com/en/latest/blueprints.html">Flask Blueprint Documentation 2</a></p>
+                <p><a href="https://flask.palletsprojects.com/en/2.0.x/testing/">Flask Testing with Pytest</a></p>
+                <p><strong><a href="https://github.com/nicktuga13/nc363_docker_flask">Link to Project Repository on GitHub</a></strong></p>
+
+            </div>
+        </div>
+    </body>
+{% endblock %}

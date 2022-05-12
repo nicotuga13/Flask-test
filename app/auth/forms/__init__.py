@@ -59,6 +59,7 @@ class security_form(FlaskForm):
 
     submit = SubmitField()
 
-    class csv_upload(FlaskForm):
-        file = FileField()
-        submit = SubmitField()
+
+class csv_upload(FlaskForm):
+    file = FileField()
+    submit = SubmitField()

@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block content %}
+    Page 9
+    <body>
+        <center>
+            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><img src="{{ url_for('static', filename='images/pylint.png') }}" class="d-block w-50" alt="Picture of the game logo"><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em"></text></svg>
+        </center>
+        <div class="row">
+            <div class="col-lg-9">
+                <div>
+                <h2>PYLINT Overview</h2>
+                <p>Pylint is a tool that checks for errors in Python code, tries to enforce a coding standard and looks for code smells.
+                    It can also look for certain type errors, it can recommend suggestions about how particular blocks can be refactored
+                    and can offer you details about the code's complexity.</p>
+                <ul>
+                    <p>It follows the style recommended by PEP 8, the Python style guide. It is similar to Pychecker and Pyflakes, but includes the following features:</p>
+                    <li>Checking the length of each line.</li>
+                    <li>Checking that declared interfaces are truly implemented.</li>
+                    <li>Checking that variable names are well-formed according to the project's coding standard.</li>
+                </ul>
+            </div>
+            <div>
+                <h2>Uses</h2>
+                <ul>
+                    <li>Enable</li>
+                    <li>Output-Format</li>
+                    <li>Optimize-ast</li>
+                    <li>Int-import-graph</li>
+                    <li>Generated-member</li>
+                </ul>
+            </div>
+            </div>
+
+
+            <div class="col-lg-2" id="sidebar">
+                <br><br><br><br><br>
+                <h3>Read More </h3>
+                <p><strong><a href="https://pylint.pycqa.org/en/latest/">Pylint User Manual</a></strong></p>
+                <p><strong><a href="https://pypi.org/project/pylint/">Installation</a></strong></p>
+            </div>
+        </div>
+    </body>
+{% endblock %}
